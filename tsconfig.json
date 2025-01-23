@@ -1,4 +1,6 @@
 {
+  "extends": "./tsconfig.app.json"
+}
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
@@ -8,6 +10,14 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    }
-  }
+    },
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true,
+    "jsx": "react",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src"]
 }
